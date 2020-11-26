@@ -58,7 +58,7 @@ export default function Navbar() {
                 onClick={handleMenu}
                 color="inherit"
               >
-                Display Name
+                 Display Name
                 <AccountCircle />
               </IconButton>
               <Menu
