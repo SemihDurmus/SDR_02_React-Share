@@ -1,23 +1,10 @@
-import Signup from "./pages/Signup";
-import Signin from "./pages/Signin";
-import Navbar from "./components/Navbar";
-
+import AppRouter from "./router/Router";
+import AuthContextProvider from "./context/AuthContext";
 function App() {
-  console.log(process.env);
-
   return (
-    <div className="App">
-      <Navbar />
-      <Signin />
-
-      {/* 
-   <Signup />
-
-   //Route
-  //forgotpassword
-  //....
-  */}
-    </div>
+    <AuthContextProvider>
+      <AppRouter />
+    </AuthContextProvider>
   );
 }
 
